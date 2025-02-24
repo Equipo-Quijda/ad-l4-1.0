@@ -2,6 +2,57 @@ html {
     height: 100%;
     width: 100%;
   }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
 .titulosAbout {
   font-size: 20px;
@@ -11,6 +62,16 @@ html {
 
 a{
   text-decoration: none;
+}
+
+
+a:visited{
+  color: white;
+}
+
+a:hover{
+  color:aqua;
+  font-size: 25px;
 }
 
 body {
@@ -27,11 +88,12 @@ header{
 }
 
 #headerimg{
-  padding: 10px 0px 0px 10px;
+  padding: 10px 0px 10px 10px;
   width: 60px;
 }
 
 footer{
+  display: flex;
   background-color: gray;
 }
 
