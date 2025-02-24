@@ -3,3 +3,8 @@ html {
     width: 100%;
   }
   
+.titulosAbout {
+  font-size: 20px;
+  color: darkmagenta;
+  text-align: center;
+}
