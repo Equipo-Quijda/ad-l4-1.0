@@ -20,3 +20,15 @@ body {
   line-height: 1.6; 
 }
 
+.container-home {
+  display: flex;
+  height: 100vh;
+}
+
+.texto-home {
+  display: flex 50%;
+}
+
+.imagen-home {
+  display: flex 50%;
+}
