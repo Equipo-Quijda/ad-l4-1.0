@@ -54,12 +54,6 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-.titulosAbout {
-  font-size: 20px;
-  color: darkmagenta;
-  text-align: center;
-}
-
 a{
   text-decoration: none;
 }
@@ -69,5 +63,16 @@ body {
   padding: 0;
   font-family: Arial, sans-serif; 
   line-height: 1.6; 
+}
+
+.titulosAbout {
+  font-size: 20px;
+  color: rgb(60, 91, 196);
+  text-align: center;
+  background-color: black;
+}
+
+#infoAbout {
+  font-size: 10px;
 }
 
