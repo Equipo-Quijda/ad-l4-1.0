@@ -26,9 +26,14 @@ body {
 }
 
 .texto-home {
-  display: flex 50%;
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
 }
 
 .imagen-home {
-  display: flex 50%;
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  
 }
