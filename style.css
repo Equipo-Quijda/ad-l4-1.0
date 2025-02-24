@@ -54,12 +54,6 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-.titulosAbout {
-  font-size: 20px;
-  color: darkmagenta;
-  text-align: center;
-}
-
 a{
   text-decoration: none;
 }
@@ -81,6 +75,7 @@ body {
   line-height: 1.6; 
 }
 
+<<<<<<< HEAD
 header{
   background-color: black; 
   display: flex; 
@@ -100,3 +95,29 @@ footer{
 .content{
   margin: 30px;
 }
+=======
+.container-home {
+  display: flex;
+  height: 100vh;
+}
+
+.texto-home {
+  display: flex 50%;
+}
+
+.imagen-home {
+  display: flex 50%;
+}
+
+.titulosAbout {
+  font-size: 20px;
+  color: rgb(60, 91, 196);
+  text-align: center;
+  background-color: black;
+}
+
+#infoAbout {
+  font-size: 10px;
+}
+
+>>>>>>> 3a04c3f81309740c444641f75952708ff38a9764
