@@ -1,78 +1,79 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    text-align: center;
-    color: #333;
+  text-align: center;
+  color: #333;
 }
 
 p {
-    font-size: 18px;
-    color: #555;
-    text-align: center;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
 }
 
 form {
-    width: 50%;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 
-a:visited{
+a:visited {
   color: white;
 }
 
-a:hover{
-  color:aqua;
+a:hover {
+  color: aqua;
   font-size: 25px;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif; 
-  line-height: 1.6; 
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .container-home {
@@ -98,4 +99,3 @@ body {
 #infoAbout {
   font-size: 10px;
 }
-
