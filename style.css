@@ -99,31 +99,61 @@ footer p{
   margin: 30px;
 }
 
-.container-home {
-  display: flex;
-  height: 100vh;
+.container {
+  margin-top: 30px;
 }
 
-.texto-home {
-  display: flex 50%;
+.card {
+  margin-bottom: 20px;
 }
 
-.imagen-home {
-  display: flex 50%;
+.card-body {
+  padding: 20px;
 }
 
 .titulosAbout {
-  font-size: 30;
+  font-size: 24px;
   color: rgb(60, 91, 196);
   text-align: center;
   background-color: black;
   margin: 0;
+  padding: 10px;
+}
+
+.columna-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #infoAbout {
-  font-size: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+  padding-top: 15px;
 }
 
-#headerimg{
+#headerimg {
   width: 50px;
+}
+
+/* Estilos de las columnas de Misión, Visión y Valores con Bootstrap */
+.container {
+  margin-top: 30px;
+}
+
+.col-12 {
+  padding: 15px;
+}
+
+.col-md-4 {
+  margin-bottom: 20px;
+}
+
+/* Asegurar que las columnas se distribuyan bien en pantallas pequeñas */
+@media (max-width: 768px) {
+  .col-md-4 {
+    margin-bottom: 15px;
+  }
 }
