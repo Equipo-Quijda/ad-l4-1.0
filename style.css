@@ -183,7 +183,7 @@ em {
 
 .side-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px var(--light-color);
 }
 
 .side-content h3 {
@@ -211,7 +211,7 @@ em {
 
 .side-content li:hover {
   padding-left: 25px;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .side-content li::before {
