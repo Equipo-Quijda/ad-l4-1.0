@@ -95,8 +95,18 @@ footer p{
   font-size: 15px;
 }
 
-.content{
+.container-contact {
+  display: flex;
+}
+
+.content-15 {
   margin: 30px;
+  width: 15%;
+}
+
+.content-70 {
+  margin: 30px;
+  width: 70%;
 }
 
 .container-home {
