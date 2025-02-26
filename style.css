@@ -150,6 +150,7 @@ h2::before {
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
   margin-bottom: 40px;
   border-top: 4px solid var(--accent-color);
 }
@@ -176,6 +177,7 @@ em {
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
   margin-bottom: 25px;
   border-left: 4px solid var(--accent-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -354,7 +356,7 @@ footer p {
   font-size: 3.5rem;
   float: left;
   line-height: 0.8;
-  margin-right: 10px;
+
   color: var(--light-color);
   font-family: 'Playfair Display', serif;
   font-weight: bold;
