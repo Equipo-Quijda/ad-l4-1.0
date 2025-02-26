@@ -75,27 +75,6 @@ body {
   line-height: 1.6; 
 }
 
-<<<<<<< HEAD
-header{
-  background-color: black; 
-  display: flex; 
-  align-items: center;
-}
-
-#headerimg{
-  padding: 10px 0px 10px 10px;
-  width: 60px;
-}
-
-footer{
-  display: flex;
-  background-color: gray;
-}
-
-.content{
-  margin: 30px;
-}
-=======
 .container-home {
   display: flex;
   height: 100vh;
@@ -120,4 +99,3 @@ footer{
   font-size: 10px;
 }
 
->>>>>>> 3a04c3f81309740c444641f75952708ff38a9764
