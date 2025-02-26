@@ -107,6 +107,7 @@ footer p{
 .content-70 {
   margin: 30px;
   width: 70%;
+  text-align: center;
 }
 
 .container-home {
@@ -136,4 +137,7 @@ footer p{
 
 #headerimg{
   width: 50px;
+}
+.contact-text{
+  text-align: center;
 }
