@@ -234,8 +234,9 @@ em {
 
 /* Pie de página con calidez */
 footer {
+  background-color: #000;
   background-color: var(--primary-color);
-  color: var(--light-color);
+  color: var(--primary-color);
   padding: 50px 0 30px;
   margin-top: 60px;
   position: relative;
@@ -337,6 +338,7 @@ footer p {
   
   footer {
     text-align: center;
+    background-color: var(--primary-color);
   }
   
   footer h4::after {
@@ -385,13 +387,13 @@ a:hover {
 }
 
 footer{
-  background-color: #555;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: end;
 }
-
+/*Footer RealFullHD1080P */
 footer p{
   color: white;
   text-align: start;
@@ -405,7 +407,12 @@ footer p{
 
 .container {
   margin-top: 30px;
+
 }
+
+/*Color footer*/
+
+
 
 .card-body {
   padding: 20px;
@@ -441,6 +448,8 @@ footer p{
 /* Estilos de las columnas de Misión, Visión y Valores con Bootstrap */
 .container {
   margin-top: 30px;
+  background-color: var(--primary-color);
+  
 }
 
 .col-12 {
@@ -477,11 +486,19 @@ footer p{
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 
+/*Carousel */
+
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+
+.carousel-control-prev-icon{
+ 
+}
+
 
 /* Cabecera de la tarjeta */
 .header-color {
