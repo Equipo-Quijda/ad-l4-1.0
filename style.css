@@ -227,6 +227,11 @@ em {
   border-bottom: none;
 }
 
+.carousel-caption{
+    position: initial;
+    height: 70vh;
+}
+
 /* Pie de página con calidez */
 footer {
   background-color: var(--primary-color);
@@ -402,10 +407,6 @@ footer p{
   margin-top: 30px;
 }
 
-.card {
-  margin-bottom: 20px;
-}
-
 .card-body {
   padding: 20px;
 }
@@ -458,7 +459,7 @@ footer p{
 
 /* Estilo de la tarjeta principal */
 .card {
-  width: auto; /* Deja que el contenido determine el ancho */
+  width: 50vw; /* Deja que el contenido determine el ancho */
   padding: 0 0 30px 0; /* Espaciado inferior para la parte inferior de la tarjeta */
   border-radius: 30px; /* Bordes redondeados para un diseño suave */
   background-color: black; /* Fondo oscuro para un contraste llamativo */
@@ -474,6 +475,12 @@ footer p{
 .card:hover {
   transform: translateY(-10px); /* Mueve la tarjeta hacia arriba al pasar el mouse */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Cabecera de la tarjeta */
