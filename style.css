@@ -14,7 +14,7 @@ body {
   line-height: 1.8;
 }
 
-/* Navegación cálida y acogedora */
+/* Navegación */
 .navbar {
   background-color: var(--primary-color);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -58,215 +58,78 @@ body {
   width: 100%;
 }
 
-/* Sección de bienvenida con calidez */
-.hero-section {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 100px 0;
-  margin-bottom: 50px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.hero-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('background-pattern.jpg') center/cover;
-  opacity: 0.1;
-  z-index: 0;
-}
-
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, transparent 30%, rgba(30, 18, 8, 0.3) 100%);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero-content h1 {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px  var(--light-color);
-  border: none;
-}
-
-.hero-content .lead {
-  max-width: 700px;
+/* Carrusel */
+.carousel {
+  max-width: 100%;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: 1.3rem;
 }
 
-/* Estilo de texto y encabezados con personalidad */
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+.carousel-item img {
+  width: 100%;
+  height: auto;
 }
 
-h1 {
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: var(--light-color);
-  border-bottom: 2px solid var(--accent-color);
-  display: inline-block;
-  padding-bottom: 10px;
+.carousel-caption {
+  position: initial;
+  height: auto;
+  padding: 20px;
 }
 
-h2 {
-  color: var(--light-color);
-  margin-top: 40px;
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 15px;
+/* Centrar el carrusel en pantallas grandes */
+@media (min-width: 992px) {
+  .carousel-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 80vh; /* Ajusta la altura del contenedor */
+  }
+
+  .carousel {
+    width: 80%; /* Limita el ancho del carrusel */
+    max-width: 800px; /* Ancho máximo para pantallas grandes */
+  }
 }
 
-h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10%;
-  height: 80%;
-  width: 5px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+@media (max-width: 767.98px) {
+  .carousel-caption {
+    height: auto;
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
 }
 
-/* Contenido principal cálido y acogedor */
-.main-content {
-  background-color: rgb(0, 0, 0);
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  margin-top: 20px;
-  margin-bottom: 40px;
-  border-top: 4px solid var(--accent-color);
-}
-
-p {
-  margin-bottom: 22px;
-  text-align: justify;
-  font-size: 1.05rem;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-em {
-  font-style: italic;
-  color: var(--light-color);
-  font-weight: 500;
-}
-
-/* Contenido lateral con vida */
-.side-content {
-  background-color: rgb(0, 0, 0);
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  margin-top: 20px;
-  margin-bottom: 25px;
-  border-left: 4px solid var(--accent-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.side-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.side-content h3 {
-  color: var(--light-color);
-  font-size: 1.3rem;
-  margin-bottom: 18px;
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed var(--accent-color);
-}
-
-.side-content ul {
-  padding-left: 5px;
-  list-style-type: none;
-}
-
-.side-content li {
-  margin-bottom: 12px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 12px;
-  transition: padding-left 0.2s ease;
-  position: relative;
-  padding-left: 20px;
-}
-
-.side-content li:hover {
-  padding-left: 25px;
-  color: var(--secondary-color);
-}
-
-.side-content li::before {
-  content: "✦";
-  position: absolute;
-  left: 0;
-  color: var(--accent-color);
-}
-
-.side-content li:last-child {
-  border-bottom: none;
-}
-
-.carousel-caption{
-    position: initial;
-    height: 70vh;
-}
-
-/* Pie de página con calidez */
+/* Footer */
 footer {
   background-color: var(--primary-color);
-  color: var(--light-color);
-  padding: 50px 0 30px;
+  color: white;
+  padding: 50px 0;
   margin-top: 60px;
-  position: relative;
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: linear-gradient(to right, var(--accent-color), var(--secondary-color), var(--accent-color));
 }
 
 footer h4 {
   color: var(--accent-color);
   margin-bottom: 25px;
-  font-size: 1.4rem;
-  position: relative;
-  display: inline-block;
-}
-
-footer h4::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 40px;
-  height: 2px;
-  background-color: var(--accent-color);
 }
 
 .social-icon {
@@ -274,344 +137,119 @@ footer h4::after {
   font-size: 1.5rem;
   margin-right: 20px;
   transition: all 0.3s ease;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-icon:hover {
   color: var(--accent-color);
-  transform: translateY(-3px) rotate(8deg);
-  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
 }
 
-footer p {
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-/* Imagen de producto con calidez */
-.product-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 4px solid white;
-}
-
-.product-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.product-caption {
-  text-align: center;
-  font-style: italic;
-  color: var(--light-color);
-  font-size: 0.9rem;
-}
-
-/* Ajustes responsivos con cuidado */
-@media (max-width: 767.98px) {
-  .hero-section {
-    padding: 60px 0;
-  }
-  
-  .main-content {
-    padding: 25px;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-  }
-  
-  .hero-content .lead {
-    font-size: 1.1rem;
-  }
-  
-  footer {
-    text-align: center;
-  }
-  
-  footer h4::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .main-content {
-    padding: 30px;
-  }
-}
-
-/* Efectos adicionales sutiles */
-::selection {
-  background-color: var(--accent-color);
-  color: white;
-}
-
-.main-content p:first-of-type::first-letter {
-  font-size: 3.5rem;
-  float: left;
-  line-height: 0.8;
-
-  color: var(--light-color);
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-a:visited {
-  color: white;
-}
-
-a:hover {
-  color: aqua;
-  font-size: 25px;
-}
-
-footer{
-  background-color: #555;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: end;
-}
-
-footer p{
-  color: white;
-  text-align: start;
-  margin-right: 40px;
-  font-size: 15px;
-}
-
-.content{
-  margin: 30px;
-}
-
-.container {
-  margin-top: 30px;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.titulosAbout {
-  font-size: 24px;
-  color: rgb(60, 91, 196);
-  text-align: center;
-  background-color: black;
-  margin: 0;
-  padding: 10px;
-}
-
-.columna-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#infoAbout {
-  font-size: 16px;
-  color: #333;
-  text-align: justify;
-  padding-top: 15px;
-}
-
-#headerimg {
-  width: 50px;
-}
-
-/* Estilos de las columnas de Misión, Visión y Valores con Bootstrap */
-.container {
-  margin-top: 30px;
-}
-
-.col-12 {
-  padding: 15px;
-}
-
-.col-md-4 {
-  margin-bottom: 20px;
-}
-
-/* Asegurar que las columnas se distribuyan bien en pantallas pequeñas */
-@media (max-width: 768px) {
-  .col-md-4 {
-    margin-bottom: 15px;
-  }}
-
-/* Estilo de la tarjeta principal */
+/* Estilos adicionales */
 .card {
-  width: 50vw; /* Deja que el contenido determine el ancho */
-  padding: 0 0 30px 0; /* Espaciado inferior para la parte inferior de la tarjeta */
-  border-radius: 30px; /* Bordes redondeados para un diseño suave */
-  background-color: black; /* Fondo oscuro para un contraste llamativo */
-  color: white; /* Color de texto blanco */
-  position: relative; /* Posicionamiento relativo para control de los elementos internos */
-  border: 2px solid #0fc; /* Borde con color verde-azul */
-  overflow: hidden; /* Asegura que no se desborden los contenidos dentro de la tarjeta */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añadimos sombra para darle profundidad */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al aplicar hover */
-}
-
-/* Efecto al pasar el cursor sobre la tarjeta */
-.card:hover {
-  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba al pasar el mouse */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
-}
-
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Cabecera de la tarjeta */
-.header-color {
-  background-color: #0fc; /* Color de fondo para la cabecera */
-  height: 20%; /* Alto de la cabecera */
-  width: 100%; /* Ancho completo */
-  position: absolute; /* Posiciona la cabecera en la parte superior */
-  top: 0;
-  left: 0;
-  z-index: 0; /* Envía la cabecera al fondo */
-  border-radius: 30px 30px 0 0; /* Bordes redondeados en la parte superior */
-}
-
-/* Contenido principal de la tarjeta */
-.content {
-  position: relative; /* Posiciona el contenido con respecto a la tarjeta */
-  z-index: 2; /* Asegura que el contenido quede encima de la cabecera */
-  padding-top: 30px; /* Espaciado superior para evitar que el contenido toque la cabecera */
-  text-align: center; /* Centra el contenido dentro de la tarjeta */
-  padding: 20px; /* Espaciado adicional dentro del contenido */
-}
-
-/* Contenedor de la imagen de perfil */
-.profile-image-container {
+  width: 50vw;
+  padding: 0 0 30px 0;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
   position: relative;
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  display: flex; /* Usamos flexbox para centrar la imagen */
-  align-items: center; /* Alinea la imagen verticalmente */
-  justify-content: center; /* Alinea la imagen horizontalmente */
-  padding-top: 30px; /* Añade espacio extra arriba para evitar que la imagen se corte */
+  border: 2px solid #0fc;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo de la imagen de perfil */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
 .profile-image {
-  width: 180px; /* Tamaño fijo de la imagen */
-  height: 180px; /* Tamaño fijo de la imagen */
-  border-radius: 50%; /* Hace que la imagen sea redonda */
-  margin: 0 auto 15px; /* Centra la imagen y le da margen inferior */
-  background-color: #e0e0e0; /* Color de fondo mientras se carga la imagen */
-  overflow: hidden; /* Asegura que nada se desborde fuera de la imagen */
-  border: 3px solid black; /* Borde alrededor de la imagen */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+  border: 3px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo de la imagen dentro del contenedor */
 .profile-image img {
-  width: 100%; /* Hace que la imagen ocupe todo el contenedor */
-  height: 100%; /* Hace que la imagen ocupe todo el contenedor */
-  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
-  transition: opacity 0.5s ease; /* Transición suave para el cambio de opacidad */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
 }
 
-/* Agrega un efecto de opacidad al pasar el ratón */
 .profile-image img:hover {
-  opacity: 0.8; /* Reduce la opacidad al pasar el ratón */
+  opacity: 0.8;
 }
 
-/* Título de la tarjeta (Nombre) */
 .name {
-  font-size: 22px; /* Tamaño de fuente para el nombre */
-  font-weight: bold; /* Hace el texto más grueso */
-  margin-bottom: 5px; /* Espaciado inferior */
-  color: #0fc; /* Color verde-azul para el nombre */
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0fc;
 }
 
-/* Título adicional (Profesión) */
 .title {
-  font-size: 18px; /* Tamaño de fuente para el título */
-  margin-bottom: 8px; /* Espaciado inferior */
-  padding-bottom: 8px; /* Espaciado inferior con línea de fondo */
-  position: relative; /* Permite la creación de un pseudo-elemento */
-  font-style: italic; /* Da estilo itálico al título */
-  color: #aaa; /* Color gris para el título */
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  font-style: italic;
+  color: #aaa;
 }
 
-/* Línea decorativa debajo del título */
 .title::after {
-  content: ""; /* Crea un pseudo-elemento */
-  position: absolute; /* Posiciona la línea en la parte inferior */
+  content: "";
+  position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%); /* Centra la línea */
-  width: 100px; /* Ancho de la línea */
-  height: 3px; /* Altura de la línea */
-  background-color: #0fc; /* Color de la línea */
-  border-radius: 3px; /* Bordes redondeados de la línea */
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #0fc;
+  border-radius: 3px;
 }
 
-/* Estilo de la descripción de la tarjeta */
 .description {
-  font-size: 16px; /* Tamaño de fuente para la descripción */
-  margin-top: 15px; /* Espaciado superior */
-  margin-bottom: 25px; /* Espaciado inferior */
-  padding: 0 20px; /* Relleno lateral */
-  line-height: 1.5; /* Altura de línea para una mejor legibilidad */
-  text-align: justify; /* Alinea el texto de manera justificada */
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 0 20px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
-/* Estilo para los íconos de redes sociales */
 .social-icons {
-  display: flex; /* Utiliza flexbox para distribuir los íconos */
-  justify-content: center; /* Centra los íconos */
-  gap: 20px; /* Espaciado entre los íconos */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* Estilo de cada ícono social */
 .social-icon {
-  width: 40px; /* Tamaño del ícono */
-  height: 40px; /* Tamaño del ícono */
-  border-radius: 50%; /* Hace los íconos redondos */
-  display: flex; /* Usamos flexbox para centrar el contenido del ícono */
-  align-items: center; /* Centra el ícono verticalmente */
-  justify-content: center; /* Centra el ícono horizontalmente */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
-/* Efecto de cambio de color al pasar el ratón sobre los íconos */
 .social-icon:hover {
-  background-color: #333; /* Cambio de color de fondo al pasar el ratón */
+  background-color: #333;
 }
 
-/* Estilos para cada red social */
 .github {
-  background-color: #4b5ec0; /* Color de fondo para GitHub */
+  background-color: #4b5ec0;
 }
 
 .linkedin {
-  background-color: #0077b5; /* Color de fondo para LinkedIn */
+  background-color: #0077b5;
 }
 
 .gmail {
-  background-color: #EA4335; /* Color de fondo para Gmail */
+  background-color: #EA4335;
 }
